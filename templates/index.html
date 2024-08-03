@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <style>
+        .todo-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .todo-text {
+            margin-right: 10px;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>해야(여자친구 해야 아님. 아이브 해야 아님.) 할 일</h1>
+    <form id="todo-form">
+        <input type="text" id="todo-input" placeholder="Enter a new todo" required>
+        <button type="submit">기록하겠소!</button>
+    </form>
+    <ol id="todo-list"></ol>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
